@@ -39,9 +39,9 @@ android {
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     androidTestImplementation 'junit:junit:4.12'
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-    implementation 'com.facebook.react:react-native:+'
-    implementation "com.google.android.gms:play-services-gcm:${rootProject.ext.playServiceGcmVersion}"
-    implementation 'me.leolin:ShortcutBadger:1.1.8@aar'
-    implementation "com.google.firebase:firebase-messaging:${rootProject.ext.firebaseVersion}"
+    api "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    api 'com.facebook.react:react-native:+'
+    api "com.google.android.gms:play-services-gcm:${rootProject.ext.playServiceGcmVersion}"
+    api 'me.leolin:ShortcutBadger:1.1.8@aar'
+    api "com.google.firebase:firebase-messaging:${rootProject.ext.firebaseVersion}"
 }
